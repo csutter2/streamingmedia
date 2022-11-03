@@ -1,0 +1,20 @@
+/*COLOR SCHEME*******************************************
+    Blues from darkest to lightest:    
+    darkest: #020659;
+    2nd darkest: #020873;
+    3rd darkest: #030A8C;
+    bright, dark blue: #2104D9;
+    darker, light blue: #0D8DFB;
+    lightest blue: #2699FB;
+
+    purple: #590242;
+**/
+
+/*GLOBAL SELECTORS***************************************/
+html {
+    box-sizing: border-box;
+    background-color: #000;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
