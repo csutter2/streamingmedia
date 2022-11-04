@@ -4,105 +4,135 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>MuzakMaker</title>
-		<meta name="description" content="MuzakMaker provides stations with trending songs, and allows you to create your own playlists or to select curated playlists.">
+		<meta name="description" content="MuzakMaker provides a smoooth jazz station with trending songs, your own playlists and curated playlists.">
 		<link rel="stylesheet" href="styles.css">
 		<meta name="author" content="Constance Sutter">
 		<!--Adds HTML 5 element support for earlier versions of IE-->
 		<!--[if lt IE 9]> <script>Then follow this immediately with javascript code</script><![end if]-->
 	</head>
 	<body>
-		<h1>MuzakMaker</h1>
-		<h2>Smooth Jazz</h2>
-		<p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+		<header>
+			<h1>MuzakMaker</h1>
+			<h2>Smooth Jazz</h2>
+			<p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+		</header>
 
+		<!--Insert input and label around here-->
 		<nav>
 			<ul>
 				<li><a href="#">MuzakMaker</a></li>
-				<li><a href="#">Trending Songs</a></li>
-				<li><a href="#">Your playlists</a></li>
-				<li><a href="#">Curated Playlists</a></li>
+				<li><a href="#trending">Trending Songs</a></li>
+				<li><a href="#playlists">Your playlists</a></li>
+				<li><a href="#curated">Curated Playlists</a></li>
 				<li><a href="#"><img src="duke-silver.png" alt="profile pic using photo of Duke Silver"></a></li>
 			</ul>
 		</nav>
 
-		Trending Songs
-		Aloma
-		Artist Cali
-		<img src="aloma-cover.png" alt="White dove flying against black background.">
-		<audio controls src="aloma.mp3"><a href="aloma.mp3">Download audio</a></audio>
+		<section id="trending">
+			<h2>Trending Songs</h2>
+			<figure>
+				<figcaption>
+					<h3>Aloma</h3>>
+					<p class="artist">Artist Cali</p>
+				</figcaption>
+				<img src="aloma-cover.png" alt="White dove flying against black background.">
+				<audio controls src="aloma.mp3"><a href="aloma.mp3">Download audio</a></audio>
+			</figure>
 
-		My Road
-		Artist Nesterouk
-		<img src="my-road-cover.png" alt="Car's view of empty highway surrounded by desert, against a blue sky.">
-		<audio controls src="my-road.mp3"><a href="my-road.mp3">Download audio</a></audio>
+			<figure>
+				<figcaption>
+					<h3>My Road</h3>>
+					<p class="artist">Artist Nesterouk</p>
+				</figcaption>
+				<img src="my-road-cover.png" alt="Car's view of empty highway surrounded by desert, against a blue sky.">
+				<audio controls src="my-road.mp3"><a href="my-road.mp3">Download audio</a></audio>
+			</figure>
 
-		Papaya
-		Artist Dredstudio
-		<img src="papaya-cover.png" alt="Papaya cut in half, against vibrant green background.">
-		<audio controls src="papaya.mp3"><a href="papaya.mp3">Download audio</a></audio>
+			<figure>
+				<figcaption>
+					<h3>Papaya</h3>
+					<p class="artist">Artist Dredstudio</p>
+				</figcaption>
+				<img src="papaya-cover.png" alt="Papaya cut in half, against vibrant green background.">
+				<audio controls src="papaya.mp3"><a href="papaya.mp3">Download audio</a></audio>
+			</figure>
 
-		Smoothies
-		Artist Black Rhomb
-		<img src="smoothies-cover.png" alt="Pineapple, bananas, oranges, and a bowl of strawberries next to a pink smoothie in a glass.">
-		<audio controls src="smoothies.mp3"><a href="smoothies.mp3">Download audio</a></audio>
+			<figure>
+				<figcaption>
+					<h3>Smoothies</h3>
+					<p class="artist">Artist Black Rhomb</p>
+				</figcaption>
+				<img src="smoothies-cover.png" alt="Pineapple, bananas, oranges, and a bowl of strawberries next to a pink smoothie in a glass.">
+				<audio controls src="smoothies.mp3"><a href="smoothies.mp3">Download audio</a></audio>
+			</figure>
 
-		Successful Performance
-		Artist Ricky Bombino
-		<img src="successful-performance-cover.png" alt="White guy in red sweater against blue washed concrete wall, pulling his arms down in celebration.">
-		<audio controls src="successful-performance.mp3"><a href="successful-performance.mp3">Download audio</a></audio>
+			<figure>
+				<figcaption>
+					<h3>Successful Performance</h3>
+					<p class="artist">Artist Ricky Bombino</p>
+				</figcaption>
+				<img src="successful-performance-cover.png" alt="White guy in red sweater against blue washed concrete wall, pulling his arms down in celebration.">
+				<audio controls src="successful-performance.mp3"><a href="successful-performance.mp3">Download audio</a></audio>
+			</figure>
 
-		<a>More trending</a>
-		Your Playlists
-		<img src="best-of-2020-cover.png" alt="Sinuous, gold flame against golden numbers 20, 20 stacked vertically.">
-		Best of 2020
-		The music that got you through the lock down.
+			<a class="more">More trending</a>
+		</section>
 
-
-		<img src="pumpkin-spice-cover.png" alt="Top view of latte with leaf design, in a white mug on a white plate, on wooden table.">
-		Pumpkin Spice
-		Creamy and spicy, just like your favorite autumnal latte.
-
-
-		<img src="quite-storm-cover.png" alt="Magnificent cloudy blue sky, with lightning cracking through with a lavender light.">
-		Quiet Storm
-		Slow tempos and relaxed rhythms. 
-
-
-		<img src="smooth-jazz-cover.png" alt="Older white man in olive polo shirt, looking off into distance against gray backdrop.">
-		Smooth Jazz
-		The pioneers of smooth jazz
-
-
-		<img src="smooth-study-cover.png" alt="Clipped picture of woman in gold sweater, working at her laptop on a small wooden table.">
-		Smooth Study
-		Background music to keep you going while you study. 
+		<section id="playlists">
+			Your Playlists
+			<img src="best-of-2020-cover.png" alt="Sinuous, gold flame against golden numbers 20, 20 stacked vertically.">
+			Best of 2020
+			The music that got you through the lock down.
 
 
-		<a>All your playlists</a>
+			<img src="pumpkin-spice-cover.png" alt="Top view of latte with leaf design, in a white mug on a white plate, on wooden table.">
+			Pumpkin Spice
+			Creamy and spicy, just like your favorite autumnal latte.
 
-		Curated Playlists
 
-		<img src="Boozey-brunch-cover.png" alt="Clinking of six cocktail glasses, from people sitting close together at a table with food.">
-		Boozey Brunch
-		Light up the afternoon with these energetic hits. 
+			<img src="quite-storm-cover.png" alt="Magnificent cloudy blue sky, with lightning cracking through with a lavender light.">
+			Quiet Storm
+			Slow tempos and relaxed rhythms. 
 
-		<img src="dinner-party-cover.png" alt="Long and narrow wooden table with candlelight, gourmet food, and wine at night.">
-		Dinner Party
-		Background music to give your party life, but allow your guests to chat. 
 
-		<img src="mellow-cover.png" alt="Two people sitting on park bench, under lush yellow trees.">
-		Mellow
-		Relax after a stressful day with this collection of extra smooth jazz.
+			<img src="smooth-jazz-cover.png" alt="Older white man in olive polo shirt, looking off into distance against gray backdrop.">
+			Smooth Jazz
+			The pioneers of smooth jazz
 
-		<img src="jazz-and-chill-cover.png" alt="A blanket of red rose petals.">
-		Jazz and Chill
-		Set the mood with these silky sounds.
 
-		<img src="smooth-saxophone-cover.png" alt="Line of musicians playing in nightclub, with only the saxophone player in focus.">
-		Jazz Saxophone
-		The greatest collection of your sax favorites.
+			<img src="smooth-study-cover.png" alt="Clipped picture of woman in gold sweater, working at her laptop on a small wooden table.">
+			Smooth Study
+			Background music to keep you going while you study. 
 
-		<a>More curated</a>
+
+			<a class="more">All your playlists</a>
+		</section>
+
+		<section id="curated">
+			Curated Playlists
+
+			<img src="Boozey-brunch-cover.png" alt="Clinking of six cocktail glasses, from people sitting close together at a table with food.">
+			Boozey Brunch
+			Light up the afternoon with these energetic hits. 
+
+			<img src="dinner-party-cover.png" alt="Long and narrow wooden table with candlelight, gourmet food, and wine at night.">
+			Dinner Party
+			Background music to give your party life, but allow your guests to chat. 
+
+			<img src="mellow-cover.png" alt="Two people sitting on park bench, under lush yellow trees.">
+			Mellow
+			Relax after a stressful day with this collection of extra smooth jazz.
+
+			<img src="jazz-and-chill-cover.png" alt="A blanket of red rose petals.">
+			Jazz and Chill
+			Set the mood with these silky sounds.
+
+			<img src="smooth-saxophone-cover.png" alt="Line of musicians playing in nightclub, with only the saxophone player in focus.">
+			Jazz Saxophone
+			The greatest collection of your sax favorites.
+
+			<a class="more">More curated</a>
+		</section>
 
 		<footer>
 			<p><small>Copyright 2022 Smooth Jazz</small></p>
