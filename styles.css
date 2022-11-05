@@ -18,25 +18,73 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     width: 375px;
     margin: 0 auto;
     background-color: #FFF;
     text-transform: uppercase;
 }
-h2 {
+h1 {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+}
+header {
+    background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+}
+header h2, header p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* header h2 {
+    
+}
+header p {
+    
+} */
+nav {
+    background-color: #030A8C;
+    color: #FFF;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+a:hover {
+    background-color: #590242;
+}
+/* h2 {
     background-color: #FFF;
     color: #590242;
-}
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+} */
 p, dd {
     text-transform: initial;
 }
-
+/*This dt code is probably wrong*/
 dt {
     display: none;
 }
-
+.more {
+    background-color: #590242;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    padding: 5px 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+a.more:hover {
+    background-color: #020659;
+}
 footer {
     color: #590242;
     text-align: center;
@@ -53,6 +101,7 @@ footer {
 #playlists section {
     background-color: #0D8DFB;
 }
+
 /*CURATED PLAYLISTS SECTION************************************/
 #curated {
     background-color: #030A8C;
@@ -63,3 +112,15 @@ footer {
 }
 
 /*MEDIA QUERIES************************************************/
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+}
