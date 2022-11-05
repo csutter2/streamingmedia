@@ -10,7 +10,7 @@
     purple: #590242;
 **/
 
-/*GLOBAL SELECTORS***************************************/
+/*GLOBAL SELECTORS********************************************/
 html {
     box-sizing: border-box;
     background-color: #020659;
@@ -18,3 +18,34 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+body {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #FFF;
+    text-transform: uppercase;
+}
+
+p, dd {
+    text-transform: initial;
+}
+
+dt {
+    display: none;
+}
+
+footer {
+    color: #590242;
+    text-align: center;
+}
+
+/*TRENDING SECTION*********************************************/
+
+
+/*YOUR PLAYLISTS SECTION***************************************/
+
+
+/*CURATED PLAYLISTS SECTION************************************/
+
+
+/*MEDIA QUERIES************************************************/
