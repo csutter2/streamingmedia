@@ -25,7 +25,10 @@ body {
     background-color: #FFF;
     text-transform: uppercase;
 }
-
+h2 {
+    background-color: #FFF;
+    color: #590242;
+}
 p, dd {
     text-transform: initial;
 }
@@ -43,9 +46,20 @@ footer {
 
 
 /*YOUR PLAYLISTS SECTION***************************************/
-
-
+#playlists {
+    background-color: #2699FB;
+    color: #FFF;
+}
+#playlists section {
+    background-color: #0D8DFB;
+}
 /*CURATED PLAYLISTS SECTION************************************/
-
+#curated {
+    background-color: #030A8C;
+    color: #FFF;
+}
+#curated section {
+    background-color: #020873;
+}
 
 /*MEDIA QUERIES************************************************/
