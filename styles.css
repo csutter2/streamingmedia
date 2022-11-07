@@ -112,24 +112,25 @@ a {
 a:hover {
     background-color: #590242;
 }
-/* div {
-
+div {
+    /* background-color: lightgray; */
 }
-h3 {
-
-} */
 dl {
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
     color: #590242;
+    
+    display: grid;
 }
 dt {
-    font-weight: 600;
+    font-weight: lighter;
     font-size: 16pt;
+    text-transform: normal;
+    font-style: italic;
 }
 dd {
     font-weight: normal;
-    /* text-transform: initial; */
+    text-transform: initial;
 }
 footer {
     font-family: 'Raleway', sans-serif;
@@ -160,6 +161,29 @@ a.more:hover {
     color: #590242;
 }
 
+    /*CC's code for the audio and scrollbar*/
+audio::-webkit-media-controls-mute-button {
+
+}
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+
+}
+#trending ::-webkit-scrollbar {
+
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+
 /*YOUR PLAYLISTS SECTION***************************************/
 #playlists {
     background-color: #2699FB;
@@ -178,6 +202,19 @@ a.more:hover {
     font-family: 'Raleway', sans-serif;
     font-size: 14pt;
     color: #FFF;
+}
+    /*CC's code for the scrollbar*/
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
 }
 
 /*CURATED PLAYLISTS SECTION************************************/
@@ -199,9 +236,25 @@ a.more:hover {
     font-size: 14pt;
     color: #FFF;
 }
+    /*CC's code for the scrollbar*/
+#curated ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#curated ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#curated ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#curated ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:834px) {
+    body {
+        width: 834px;
+    }
     /*Hamburger menu coding from CC*/
     ul {
         overflow: visible;
