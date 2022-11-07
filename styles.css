@@ -24,28 +24,80 @@ body {
     background-color: #FFF;
     text-transform: uppercase;
 }
-h1 {
-    display: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 20pt;
-}
 header {
     background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
     color: #FFF;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     font-size: 20pt;
 }
-header h2, header p {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-/* header h2 {
-    
-}
 header p {
-    
-} */
+    font-weight: normal;
+}
+h2 {
+    background-color: #FFF;
+    color: #590242;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+/*Hamburger Menu Coding from CC, except for media query which is at bottom of stylesheet*/
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+/*ENDS Hamburger Menu Coding from CC*/
+
 nav {
     background-color: #030A8C;
     color: #FFF;
@@ -60,24 +112,38 @@ a {
 a:hover {
     background-color: #590242;
 }
-/* h2 {
-    background-color: #FFF;
+/* div {
+
+}
+h3 {
+
+} */
+dl {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
     color: #590242;
+}
+dt {
+    font-weight: 600;
+    font-size: 16pt;
+}
+dd {
+    font-weight: normal;
+    /* text-transform: initial; */
+}
+footer {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 20pt;
-} */
-p, dd {
-    text-transform: initial;
-}
-/*This dt code is probably wrong*/
-dt {
-    display: none;
+    font-size: 10pt;
+    color: #590242;
+    text-align: center;
 }
 .more {
-    background-color: #590242;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     font-size: 14pt;
+    background-color: #590242;
+    color: #FFF;
     padding: 5px 30px;
     margin-left: 20px;
     border-radius: 5px;
@@ -85,13 +151,14 @@ dt {
 a.more:hover {
     background-color: #020659;
 }
-footer {
-    color: #590242;
-    text-align: center;
-}
 
 /*TRENDING SECTION*********************************************/
-
+#trending h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #590242;
+}
 
 /*YOUR PLAYLISTS SECTION***************************************/
 #playlists {
@@ -100,6 +167,17 @@ footer {
 }
 #playlists section {
     background-color: #0D8DFB;
+}
+#playlists h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #FFF;
+}
+#playlists p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    color: #FFF;
 }
 
 /*CURATED PLAYLISTS SECTION************************************/
@@ -110,9 +188,21 @@ footer {
 #curated section {
     background-color: #020873;
 }
+#curated h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #FFF;
+}
+#curated p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    color: #FFF;
+}
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:834px) {
+    /*Hamburger menu coding from CC*/
     ul {
         overflow: visible;
         position: absolute;
@@ -123,4 +213,6 @@ footer {
     label span, input {
         display: none;
     }
+    /*ENDS Hamburger menu coding from CC*/
 }
+
