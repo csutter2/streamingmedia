@@ -27,7 +27,7 @@ body {
 header {
     background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
     color: #FFF;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20pt;
 }
@@ -37,7 +37,7 @@ header p {
 h2 {
     background-color: #FFF;
     color: #590242;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20pt;
 }
@@ -116,14 +116,14 @@ div {
     /* background-color: lightgray; */
 }
 dl {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-size: 16pt;
     color: #590242;
     
     display: grid;
 }
 dt {
-    font-weight: lighter;
+    font-weight: lighter;/*Consider changing this to a number instead*/
     font-size: 16pt;
     text-transform: normal;
     font-style: italic;
@@ -133,7 +133,7 @@ dd {
     text-transform: initial;
 }
 footer {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 10pt;
     color: #590242;
@@ -155,7 +155,7 @@ a.more:hover {
 
 /*TRENDING SECTION*********************************************/
 #trending h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16pt;
     color: #590242;
@@ -193,13 +193,13 @@ audio::-webkit-media-controls-enclosure {
     background-color: #0D8DFB;
 }
 #playlists h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16pt;
     color: #FFF;
 }
 #playlists p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-size: 14pt;
     color: #FFF;
 }
@@ -226,13 +226,13 @@ audio::-webkit-media-controls-enclosure {
     background-color: #020873;
 }
 #curated h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16pt;
     color: #FFF;
 }
 #curated p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-size: 14pt;
     color: #FFF;
 }
