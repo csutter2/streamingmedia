@@ -23,9 +23,11 @@ body {
     margin: 0 auto;
     background-color: #FFF;
     text-transform: uppercase;
+    display: grid;
 }
 header {
-    background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
+    background-color: #030A8C;/*temporary code*/
+    /* background: linear-gradient(90deg,#030A8C,#020659,#000) border-box; */
     color: #FFF;
     font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
@@ -33,6 +35,11 @@ header {
 }
 header p {
     font-weight: normal;
+    text-transform: initial;
+}
+header h2 {
+    background-color: #030A8C;
+    color: #FFF;
 }
 h2 {
     background-color: #FFF;
@@ -113,7 +120,7 @@ a:hover {
     background-color: #590242;
 }
 div {
-    /* background-color: lightgray; */
+    width: 311px;    
 }
 dl {
     font-family: 'Raleway', 'Montserrat', sans-serif;
@@ -125,12 +132,13 @@ dl {
 dt {
     font-weight: lighter;/*Consider changing this to a number instead*/
     font-size: 16pt;
-    text-transform: normal;
+    text-transform: initial;
     font-style: italic;
 }
 dd {
     font-weight: normal;
     text-transform: initial;
+    margin-left: 15px;
 }
 footer {
     font-family: 'Raleway', 'Montserrat', sans-serif;
@@ -145,6 +153,8 @@ footer {
     font-size: 14pt;
     background-color: #590242;
     color: #FFF;
+    width: 250px;
+    text-align: center;
     padding: 5px 30px;
     margin-left: 20px;
     border-radius: 5px;
@@ -154,13 +164,54 @@ a.more:hover {
 }
 
 /*TRENDING SECTION*********************************************/
+#trending {
+    background-color: #FFF;
+    width: 100%;
+}
+#trending h2 {
+    margin-bottom: -50px;
+    margin-left: 30px;
+}
+.songs {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.songs section {
+    margin: 5px;
+    width: 311px;
+}
+.songs div {
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: .7;
+    background-color: rgba(211,211,211,.7);
+    position: relative;
+    top: 312px;
+}
+dl {
+    display: flex;
+    margin-left: 10px;
+}
 #trending h3 {
     font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16pt;
     color: #590242;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
 }
-
+audio {
+    margin-left: 5px;
+    position: relative;
+    bottom: 205px;
+}
+audio[controls] {
+    border-radius: 20px;
+}
     /*CC's code for the audio and scrollbar*/
 audio::-webkit-media-controls-mute-button {
 
