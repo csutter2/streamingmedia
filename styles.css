@@ -417,7 +417,39 @@ audio::-moz-media-controls-enclosure {
 @media screen and (min-width:834px) {
     body {
         width: 834px;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "trending trending"
+        "playlists curated"
+        "footer footer";
     }
+    header {
+        grid-area: header;
+    }
+    nav {
+        width: 834px;
+        grid-area: nav;
+    }
+    ul {
+        width: 834px;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .songs {
+        width: 834px;
+    }
+    #trending {
+        grid-area: trending;
+    }
+    #playlists {
+        grid-area: playlists;
+    }
+    #curated {
+        grid-area: curated;
+    }
+
     /*Hamburger menu coding from CC*/
     ul {
         overflow: visible;
@@ -430,11 +462,6 @@ audio::-moz-media-controls-enclosure {
         display: none;
     }
     /*ENDS Hamburger menu coding from CC*/
-    nav {
-        width: 834px;
-    }
-    ul {
-        width: 834px;
-    }
+    
 }
 
