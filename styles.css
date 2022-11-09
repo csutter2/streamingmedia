@@ -80,12 +80,13 @@ li:first-child ~ li {
 a {
     text-decoration: none;
     color: #FFF;
+    /* padding: 3px; */
 }
 a:hover {
     background-color: #590242;
 }
 div a:hover {
-    height: 299px;
+    height: 299px;/*consider changing this code*/
 }
 div {
     width: 311px;    
@@ -114,6 +115,8 @@ footer {
     color: #590242;
     background-color: #FFF;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .more {
     font-family: 'Raleway', sans-serif;
@@ -198,7 +201,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 #trending h2 {
     margin-bottom: -50px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .songs {
     display: flex;
@@ -282,7 +285,7 @@ audio::-moz-media-controls-enclosure {
 }
 #playlists h2 {
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 #playlists div {
     background-color: #2699FB;
@@ -351,7 +354,7 @@ audio::-moz-media-controls-enclosure {
 }
 #curated h2 {
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 #curated div {
     display: flex;
@@ -427,12 +430,22 @@ audio::-moz-media-controls-enclosure {
     header {
         grid-area: header;
     }
+    header p, header h2 {
+        padding-left: 20px;
+    }
     nav {
         width: 834px;
         grid-area: nav;
+        height: 95px;
     }
     ul {
         width: 834px;
+        grid-gap: 12px;
+    }
+    li:first-child {
+        padding-left: 0;
+        display: flex;
+        align-items: center;
     }
     footer {
         grid-area: footer;
@@ -442,12 +455,68 @@ audio::-moz-media-controls-enclosure {
     }
     #trending {
         grid-area: trending;
+        display: flex;
+        flex-direction: column;
+    }
+    #trending h2, #playlists h2, #curated h2 {
+        padding-left: 15px;
+    }
+    #trending .more {
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: -8px;
     }
     #playlists {
         grid-area: playlists;
+        display: flex;
+        flex-direction: column;
+        /* width: 400px; */
+    }
+    #playlists img, #curated, img {
+        margin-top: 0;
+    }
+    #playlists a:hover {
+        height: 102.8px;
+        width: 395px;
+    }
+    #playlists .more {
+        align-self: flex-end;
+        margin-right: 10px;
     }
     #curated {
         grid-area: curated;
+        display: flex;
+        flex-direction: column;
+        /* width: 400px; */
+    }
+    /*FIX THIS HOVER*/
+    #curated a:hover {
+        height: 124.6px;
+        width: 395px;
+    }
+    #curated .more {
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    #playlists div, #curated div {
+        height: 450px;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #playlists a, #curated a {
+        display: grid;
+        grid-template-areas: 
+        "img h3"
+        "img p";
+    }
+    #playlists img, #curated img {
+        grid-area: img;
+    }
+    #playlists h3, #curated h3 {
+        grid-area: h3;
+    }
+    #playlists p, #curated p  {
+        grid-area: p;
     }
 
     /*Hamburger menu coding from CC*/
