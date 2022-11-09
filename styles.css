@@ -22,23 +22,27 @@ body {
     width: 375px;
     margin: 0 auto;
     background-color: #FFF;
-    text-transform: uppercase;
     display: grid;
+    justify-content: center;
 }
 header {
-    background-color: #030A8C;/*temporary code*/
-    /* background: linear-gradient(90deg,#030A8C,#020659,#000) border-box; */
+    background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
     color: #FFF;
     font-family: 'Raleway', 'Montserrat', sans-serif;
-    font-weight: bold;
     font-size: 20pt;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 header p {
     font-weight: normal;
     text-transform: initial;
 }
 header h2 {
-    background-color: #030A8C;
+    background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
+    font-weight: bold;
+    text-transform: uppercase;
     color: #FFF;
 }
 h2 {
@@ -50,6 +54,84 @@ h2 {
 }
 p {
     text-transform: initial;
+}
+nav {
+    background-color: #030A8C;
+    color: #FFF;
+    height: 80px;
+    order: -1;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+} 
+li:first-child {
+    font-variant: small-caps;
+    font-size: 20pt;
+}
+li:first-child ~ li {
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+a:hover {
+    background-color: #590242;
+}
+div a:hover {
+    height: 299px;
+}
+div {
+    width: 311px;    
+}
+dl {
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: #590242;
+    display: grid;
+}
+dt {
+    font-weight: lighter;/*Consider changing this to a number instead*/
+    font-size: 16pt;
+    text-transform: initial;
+    font-style: italic;
+}
+dd {
+    font-weight: normal;
+    text-transform: initial;
+    margin-left: 15px;
+}
+footer {
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #590242;
+    background-color: #FFF;
+    text-align: center;
+}
+.more {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: #590242;
+    color: #FFF;
+    text-transform: initial;
+    width: 210px;
+    text-align: center;
+    padding: 5px 30px;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+a.more:hover {
+    background-color: #020659;
 }
 
 /*Hamburger Menu Coding from CC, except for media query which is at bottom of stylesheet*/
@@ -108,71 +190,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 /*ENDS Hamburger Menu Coding from CC*/
 
-nav {
-    background-color: #030A8C;
-    color: #FFF;
-}
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-a:hover {
-    background-color: #590242;
-}
-div a:hover {
-    height: 299px;
-}
-div {
-    width: 311px;    
-}
-dl {
-    font-family: 'Raleway', 'Montserrat', sans-serif;
-    font-size: 16pt;
-    color: #590242;
-    display: grid;
-}
-dt {
-    font-weight: lighter;/*Consider changing this to a number instead*/
-    font-size: 16pt;
-    text-transform: initial;
-    font-style: italic;
-}
-dd {
-    font-weight: normal;
-    text-transform: initial;
-    margin-left: 15px;
-}
-footer {
-    font-family: 'Raleway', 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 10pt;
-    color: #590242;
-    background-color: #FFF;
-    text-align: center;
-    justify-self: flex-start;
-}
-.more {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 14pt;
-    background-color: #590242;
-    color: #FFF;
-    text-transform: initial;
-    width: 210px;
-    text-align: center;
-    padding: 5px 30px;
-    margin-left: 25px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-a.more:hover {
-    background-color: #020659;
-}
-
 /*TRENDING SECTION*********************************************/
 #trending {
     background-color: #FFF;
@@ -185,14 +202,17 @@ a.more:hover {
 }
 .songs {
     display: flex;
-    width: 100%;
+    width: 415px;
     margin-bottom: 15px;
+    overflow: scroll;
 }
 .songs section {
     margin: 5px;
-    width: 311px;
+    margin-bottom: 25px;
+    min-width: 311px;/*added min*/
     height: 381px;
     overflow: hidden;
+    flex: 1 0 1;
 }
 .songs div {
     margin-left: 0;
@@ -258,6 +278,7 @@ audio::-moz-media-controls-enclosure {
 #playlists {
     background-color: #FFF;
     color: #FFF;
+    width: 415px;   
 }
 #playlists h2 {
     margin-bottom: 10px;
@@ -265,13 +286,15 @@ audio::-moz-media-controls-enclosure {
 }
 #playlists div {
     background-color: #2699FB;
-    width: 100%;
     display: flex;
+    width: 415px;
+    overflow: scroll;
 }
 #playlists section {
     background-color: #0D8DFB;
-    width: 185px;
     margin: 10px;
+    min-width: 185px;
+    flex: 1 0 1;
 }
 #playlists a {
     display: flex;
@@ -324,6 +347,7 @@ audio::-moz-media-controls-enclosure {
 #curated {
     color: #FFF;
     background-color: #FFF;
+    width: 415px;
 }
 #curated h2 {
     margin-bottom: 10px;
@@ -331,12 +355,14 @@ audio::-moz-media-controls-enclosure {
 }
 #curated div {
     display: flex;
-    width: 100%;
     background-color: #030A8C;
+    width: 415px;
+    overflow: scroll;
 }
 #curated section {
     background-color: #020873;
-    width: 185px;
+    min-width: 185px;
+    flex: 1 0 1;
     margin: 10px;
 }
 #curated a {
@@ -404,5 +430,11 @@ audio::-moz-media-controls-enclosure {
         display: none;
     }
     /*ENDS Hamburger menu coding from CC*/
+    nav {
+        width: 834px;
+    }
+    ul {
+        width: 834px;
+    }
 }
 
