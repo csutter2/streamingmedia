@@ -264,22 +264,25 @@ audio::-webkit-media-controls-play-button {
 audio::-webkit-media-controls-enclosure {
     background-color: rgba(211,211,211,.7);
 }
-audio::-moz-media-controls-enclosure {
-    background-color: rgba(211,211,211,.7);
-}
 #trending ::-webkit-scrollbar {
-    /* background-color: #590242; */
+    background-color: rgba(89, 2, 66, .2);
+    border-radius: 5px;
+    box-shadow: inset .1em .1em 1em #590242;
 }
 #trending ::-webkit-scrollbar-track {
-    /* background-color: rgba(89, 2, 66, .1); */
+    
 }
 #trending ::-webkit-scrollbar-thumb {
-
+    background-color:#590242;
+    border-radius: 5px;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-
+    background-color:lightgreen;
 }
 
+#trending ::-webkit-scrollbar:vertical {
+    display: none;
+}
 
 /*YOUR PLAYLISTS SECTION***************************************/
 #playlists {
@@ -338,16 +341,22 @@ audio::-moz-media-controls-enclosure {
 }
     /*CC's code for the scrollbar*/
 #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
+    background-color: rgba(89, 2, 66, .2);
+    border-radius: 5px;
+    box-shadow: inset .1em .1em 1em #020659;
 }
 #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
+    border-radius: 5px;
 }
 #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
+    background-color: #020659;
+    border-radius: 5px;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
 
+}
+#playlists ::-webkit-scrollbar:vertical {
+    display: none;
 }
 
 /*CURATED PLAYLISTS SECTION************************************/
@@ -405,7 +414,9 @@ audio::-moz-media-controls-enclosure {
 #curated .more {
     margin-top: 12px;
 }
-
+#curated ::-webkit-scrollbar:vertical {
+    display: none;
+}
     /*CC's code for the scrollbar*/
 #curated ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
 
@@ -479,6 +490,9 @@ audio::-moz-media-controls-enclosure {
     }
     #playlists img, #curated, img {
         margin-top: 0;
+    }
+    #playlists ::-webkit-scrollbar:horizontal,  #curated ::-webkit-scrollbar:horizontal {
+        display: none;
     }
     #playlists a:hover {
         height: 102.8px;
