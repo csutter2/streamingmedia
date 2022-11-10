@@ -203,7 +203,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #trending {
     background-color: #FFF;
     width: 100%;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 #trending h2 {
     margin-bottom: -50px;
