@@ -203,7 +203,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #trending {
     background-color: #FFF;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 #trending h2 {
     margin-bottom: -50px;
@@ -217,7 +217,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 .songs section {
     margin: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     min-width: 311px;/*added min*/
     height: 381px;
     overflow: hidden;
