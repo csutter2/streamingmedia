@@ -59,6 +59,8 @@ nav {
     background-color: #030A8C;
     color: #FFF;
     order: -1;
+    display: flex;
+    flex-direction: column;
 }
 ul {
     list-style: none;
@@ -74,8 +76,8 @@ li:first-child {
     font-size: 20pt;
     margin-top: 0;
     position: absolute;
-    left: 290px;
     top: -25px;
+    margin-left: 95px;
 }
 li:first-child ~ li {
     text-transform: uppercase;
@@ -462,6 +464,7 @@ audio::-webkit-media-controls-enclosure {
         padding-left: 0;
         display: flex;
         align-items: center;
+        margin-left: 0;
     }
     footer {
         grid-area: footer;
@@ -493,6 +496,9 @@ audio::-webkit-media-controls-enclosure {
     }
     #playlists ::-webkit-scrollbar:horizontal,  #curated ::-webkit-scrollbar:horizontal {
         display: none;
+    }
+    #playlists ::-webkit-scrollbar:vertical,  #curated ::-webkit-scrollbar:vertical {
+        display: contents;
     }
     #playlists a:hover {
         height: 102.8px;
