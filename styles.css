@@ -67,7 +67,6 @@ p {
 nav {
     background-color: #030A8C;
     color: #FFF;
-    /* order: -1; */
     display: flex;
     flex-direction: column;
     padding-top: 15px;
@@ -483,6 +482,7 @@ audio::-webkit-media-controls-enclosure {
     }
     header {
         grid-area: header;
+        height: auto;
     }
     header p, header h2 {
         padding-left: 20px;
@@ -490,18 +490,27 @@ audio::-webkit-media-controls-enclosure {
     nav {
         width: 834px;
         grid-area: nav;
-        height: 95px;
+        /* height: 95px; */
+        padding-bottom: 2px;
+        padding-left: 2px;
+        margin-left: 0px;
+        flex-direction: row;
+        justify-content: center;/*keep?*/
     }
     ul {
         width: 834px;
-        grid-gap: 12px;
+        grid-gap: 50px;
     }
     li:first-child {
-        position: initial;
+        position: relative;
+        bottom: 20px;
         padding-left: 0;
-        display: flex;
-        align-items: center;
-        margin-left: 0;
+        margin-left: -35px;
+        padding-right: 10px;
+    }
+    a.menu_links {
+        width: 113.6px;
+        height: 85px;
     }
     footer {
         grid-area: footer;
