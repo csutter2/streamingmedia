@@ -511,6 +511,7 @@ audio::-webkit-media-controls-enclosure {
     a.menu_links {
         width: 113.6px;
         height: 85px;
+        text-align: center;
     }
     footer {
         grid-area: footer;
