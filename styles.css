@@ -495,21 +495,25 @@ audio::-webkit-media-controls-enclosure {
         padding-left: 2px;
         margin-left: 0px;
         flex-direction: row;
-        justify-content: center;/*keep?*/
+        
     }
     ul {
         width: 834px;
-        grid-gap: 50px;
+        grid-gap: 48px;
     }
     li:first-child {
         position: relative;
-        bottom: 20px;
+        bottom: 30px;
         padding-left: 0;
-        margin-left: -35px;
+        margin-left: -42px;
         padding-right: 10px;
     }
+    li:first-child ~ li {
+        display: flex;
+    }
     a.menu_links {
-        width: 113.6px;
+        /* width: 113.6px; */
+        width: 129px;
         height: 85px;
         text-align: center;
     }
@@ -547,28 +551,48 @@ audio::-webkit-media-controls-enclosure {
     #playlists ::-webkit-scrollbar:vertical,  #curated ::-webkit-scrollbar:vertical {
         display: contents;
     }
-    #playlists a:hover {
-        height: 102.8px;
+
+
+
+    #playlists div a:hover {
+        height: 98px;
         width: 395px;
     }
+
+
     #playlists .more {
         align-self: flex-end;
         margin-right: 10px;
     }
+    #playlists .more:hover {
+        width: 210px;
+        height: 31.6px;
+    }
+
     #curated {
         grid-area: curated;
         display: flex;
         flex-direction: column;
         /* width: 400px; */
     }
-    /*FIX THIS HOVER*/
-    #curated a:hover {
+
+
+    #curated div a:hover {
+        height: 103px;
+        width: 395px;
+    }
+    #curated div section:nth-child(3) a {
         height: 124.6px;
         width: 395px;
     }
+
     #curated .more {
         align-self: flex-end;
         margin-right: 10px;
+    }
+    #curated .more:hover {
+        width: 210px;
+        height: 31.6px;
     }
     #playlists div, #curated div {
         height: 450px;
