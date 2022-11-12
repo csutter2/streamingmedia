@@ -333,7 +333,7 @@ audio::-webkit-media-controls-enclosure {
     overflow: scroll;
 }
 #playlists div a:hover {
-    height: 269px;
+    height: 276.133px;
 }
 #playlists section {
     background-color: #0D8DFB;
@@ -347,7 +347,8 @@ audio::-webkit-media-controls-enclosure {
     align-items: center;
 }
 #playlists img {
-    width: 80%;
+    width: 85%;
+    height: auto;
     margin-top: 10px;
 }
 #playlists h3 {
@@ -411,7 +412,7 @@ audio::-webkit-media-controls-enclosure {
     overflow: scroll;
 }
 #curated div a:hover {
-    height: 298.5px;
+    height: 305.933px;
 }
 #curated section {
     background-color: #020873;
@@ -425,7 +426,8 @@ audio::-webkit-media-controls-enclosure {
     align-items: center;
 }
 #curated img {
-    width: 80%;
+    width: 85%;
+    height: auto;
     margin-top: 10px;
 }
 #curated h3 {
@@ -542,8 +544,11 @@ audio::-webkit-media-controls-enclosure {
         flex-direction: column;
         /* width: 400px; */
     }
-    #playlists img, #curated, img {
+    #playlists img {
         margin-top: 0;
+        margin-left: 10px;
+        width: 70%;
+        height: auto;
     }
     #playlists ::-webkit-scrollbar:horizontal,  #curated ::-webkit-scrollbar:horizontal {
         display: none;
@@ -551,15 +556,13 @@ audio::-webkit-media-controls-enclosure {
     #playlists ::-webkit-scrollbar:vertical,  #curated ::-webkit-scrollbar:vertical {
         display: contents;
     }
-
-
-
+    #playlists div {
+        width: 417px;
+    }
     #playlists div a:hover {
         height: 98px;
-        width: 395px;
+        width: 397px;
     }
-
-
     #playlists .more {
         align-self: flex-end;
         margin-right: 10px;
@@ -568,24 +571,39 @@ audio::-webkit-media-controls-enclosure {
         width: 210px;
         height: 31.6px;
     }
-
     #curated {
         grid-area: curated;
         display: flex;
         flex-direction: column;
         /* width: 400px; */
     }
-
-
+    #curated div {
+        width: 417px;
+    }
     #curated div a:hover {
         height: 103px;
-        width: 395px;
+        width: 397px;
     }
     #curated div section:nth-child(3) a {
         height: 124.6px;
-        width: 395px;
+        width: 397px;
     }
-
+    #curated img {
+        margin-top: 0;
+        margin-left: 10px;
+        width: 80%;
+        height: auto;
+    }
+    /*individual image size adjustments: Mellow, Jazz & Chill, Jazz Saxophone respectively*/
+    #curated section:nth-child(3) img {
+        width: 89%;
+    }
+    #curated section:nth-child(4) img {
+        width: 70%;
+    }
+    #curated section:nth-child(5) img {
+        width: 89%;
+    }
     #curated .more {
         align-self: flex-end;
         margin-right: 10px;
