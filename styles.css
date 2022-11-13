@@ -29,7 +29,6 @@ body {
 header {
     background: linear-gradient(90deg,#030A8C,#020659,#000) border-box;
     color: #FFF;
-    font-family: 'Raleway', 'Montserrat', sans-serif;
     font-size: 20px;
     height: 200px;
     margin-left: 0;
@@ -52,14 +51,6 @@ header h2 {
     color: #FFF;
     margin-top: 10px;
     margin-bottom: 5px;
-}
-section h2 {
-    background-color: #FFF;
-    color: #590242;
-    font-family: 'Raleway', 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20pt;
-    padding-left: 10px;
 }
 p {
     text-transform: initial;
@@ -121,6 +112,14 @@ a {
 }
 a:hover {
     background-color: #590242;
+}
+section h2 {
+    background-color: #FFF;
+    color: #590242;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-left: 10px;
 }
 div {
     width: 311px;    
@@ -259,10 +258,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     position: relative;
     top: 312px;
 }
-dl {
-    display: flex;
-    margin-left: 10px;
-}
 #trending h3 {
     font-family: 'Raleway', 'Montserrat', sans-serif;
     font-weight: bold;
@@ -271,6 +266,10 @@ dl {
     padding-top: 10px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 10px;
+}
+dl {
+    display: flex;
     margin-left: 10px;
 }
 audio {
@@ -448,6 +447,7 @@ audio::-webkit-media-controls-enclosure {
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:834px) {
+    /*GLOBAL SELECTORS***************************/
     body {
         width: 834px;
         grid-template-areas: 
@@ -494,6 +494,7 @@ audio::-webkit-media-controls-enclosure {
     footer {
         grid-area: footer;
     }
+    /*TRENDING SECTION AND GROUPED SELECTORS*******/
     .songs {
         width: 834px;
     }
@@ -510,6 +511,7 @@ audio::-webkit-media-controls-enclosure {
         margin-right: 10px;
         margin-top: -8px;
     }
+    /*PLAYLIST'S SECTION***************************/
     #playlists {
         grid-area: playlists;
         display: flex;
@@ -563,6 +565,7 @@ audio::-webkit-media-controls-enclosure {
         width: 210px;
         height: 31.6px;
     }
+    /*CURATED SECTION AND GROUPED SELECTORS***************************/
     #curated {
         grid-area: curated;
         display: flex;
