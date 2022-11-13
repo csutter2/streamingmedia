@@ -322,7 +322,8 @@ audio::-webkit-media-controls-enclosure {
     overflow: scroll;
 }
 #playlists div a:hover {
-    height: 276.133px;
+    /* height: 276.133px; */ /*this one tailored to browser rendering*/
+    height: 277.938px;/*this height is tailored to github link*/
 }
 #playlists section {
     background-color: #0D8DFB;
@@ -383,7 +384,7 @@ audio::-webkit-media-controls-enclosure {
     display: none;
 }
 
-/*CURATED PLAYLISTS SECTION************************************/
+/*CURATED SECTION************************************/
 #curated {
     color: #FFF;
     background-color: #FFF;
@@ -400,7 +401,8 @@ audio::-webkit-media-controls-enclosure {
     overflow: scroll;
 }
 #curated div a:hover {
-    height: 305.933px;
+    /* height: 305.933px; */ /*value for browser rendering*/
+    height: 307.938px;/*tailored to github link*/
 }
 #curated section {
     background-color: #020873;
@@ -541,15 +543,28 @@ audio::-webkit-media-controls-enclosure {
     #playlists div {
         width: 417px;
     }
+
     /*sizing of hover tailored to Chrome's section computation, not Firefox's*/
-    #playlists div a:hover {
+    /*This set works correctly in browser rendering but not thru Github's link*/
+    /* #playlists div a:hover {
         height: 127px; 
         width: 380.2px;
     }
     #playlists section:nth-child(2) a:hover {
         height: 148.6px;
         width: 380.2px;
+    } */
+
+    /*This code tailored to Github's link*/
+    #playlists div a:hover {
+        height: 128px; 
+        width: 376px;
     }
+    #playlists section:nth-child(2) a:hover {
+        height: 150px;
+        width: 376px;
+    }
+
     #playlists p {
         margin-bottom: 39px;
         margin-right: 4px;
@@ -574,17 +589,31 @@ audio::-webkit-media-controls-enclosure {
     #curated div {
         width: 417px;
     }
+
     /*sizing of hover tailored to Chrome's section computation, not Firefox's*/
-    #curated div a:hover {
+    /*this code works correctly in browser rending but not github's calculations*/
+    /* #curated div a:hover {
         height: 127px;
         width: 380.2px;
     }
+
+    /*This code tailored to Github's link*/
+    #curated div a:hover {
+        height: 128px;
+        width: 376px;
+    }
+    #curated section:nth-child(3) a:hover {
+        height: 150px;
+        width: 376px;
+    }
+    
     #curated img {
         margin-top: 0;
         margin-left: 10px;
         width: 90%;
         height: auto;
     }
+
     /*individual image size adjustments: Mellow, Jazz & Chill, Jazz Saxophone respectively*/
     #curated section:nth-child(3) img {
         width: 93%;
