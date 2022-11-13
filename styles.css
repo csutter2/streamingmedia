@@ -34,7 +34,7 @@ header {
     height: 200px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 85px;/*new*/
+    margin-bottom: 85px;
     padding-left: 35px;
     padding-right: 40px;
     position: relative;
@@ -85,7 +85,6 @@ ul {
     width: 415px;
 }
 li {
-    /* padding: 8px; */
     text-align: center;
 } 
 li:first-child {
@@ -108,7 +107,6 @@ li:first-child a {
    margin-left: -25px;
    padding-top: 20px;
    padding-bottom: 20px;
-
 }
 li:first-child ~ li {
     text-transform: uppercase;
@@ -134,7 +132,7 @@ dl {
     display: grid;
 }
 dt {
-    font-weight: lighter;/*Consider changing this to a number instead*/
+    font-weight: 400;
     font-size: 16pt;
     text-transform: initial;
     font-style: italic;
@@ -248,10 +246,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 .songs section {
     margin: 5px;
     margin-bottom: 10px;
-    min-width: 311px;/*added min*/
+    min-width: 311px;
     height: 381px;
     overflow: hidden;
-    flex: 1 0 1;
 }
 .songs div {
     margin-left: 0;
@@ -308,10 +305,6 @@ audio::-webkit-media-controls-enclosure {
     background-color:#590242;
     border-radius: 5px;
 }
-#trending ::-webkit-scrollbar-thumb:hover {
-
-}
-
 #trending ::-webkit-scrollbar:vertical {
     display: none;
 }
@@ -339,7 +332,6 @@ audio::-webkit-media-controls-enclosure {
     background-color: #0D8DFB;
     margin: 10px;
     min-width: 185px;
-    flex: 1 0 1;
 }
 #playlists a {
     display: flex;
@@ -417,7 +409,6 @@ audio::-webkit-media-controls-enclosure {
 #curated section {
     background-color: #020873;
     min-width: 185px;
-    flex: 1 0 1;
     margin: 10px;
 }
 #curated a {
@@ -457,19 +448,6 @@ audio::-webkit-media-controls-enclosure {
 #curated ::-webkit-scrollbar:vertical {
     display: none;
 }
-    /*CC's code for the scrollbar*/
-#curated ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
-}
-#curated ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
-}
-#curated ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
-}
-#curated ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
-}
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:834px) {
@@ -492,12 +470,10 @@ audio::-webkit-media-controls-enclosure {
     nav {
         width: 834px;
         grid-area: nav;
-        /* height: 95px; */
         padding-bottom: 2px;
         padding-left: 2px;
         margin-left: 0px;
         flex-direction: row;
-        
     }
     ul {
         width: 834px;
@@ -541,7 +517,6 @@ audio::-webkit-media-controls-enclosure {
         grid-area: playlists;
         display: flex;
         flex-direction: column;
-        /* width: 400px; */
     }
     #playlists img {
         margin-top: 0;
@@ -549,7 +524,6 @@ audio::-webkit-media-controls-enclosure {
         width: 88%;
         height: auto;
     }
-
     #playlists section:nth-child(2) img {
         width: 95%;
     }
@@ -559,11 +533,10 @@ audio::-webkit-media-controls-enclosure {
     #playlists section:nth-child(5) img {
         width: 92%;
     }
-
-    #playlists ::-webkit-scrollbar:horizontal,  #curated ::-webkit-scrollbar:horizontal {
+    #playlists ::-webkit-scrollbar:horizontal, #curated ::-webkit-scrollbar:horizontal {
         display: none;
     }
-    #playlists ::-webkit-scrollbar:vertical,  #curated ::-webkit-scrollbar:vertical {
+    #playlists ::-webkit-scrollbar:vertical, #curated ::-webkit-scrollbar:vertical {
         display: contents;
     }
     #playlists div {
@@ -578,7 +551,6 @@ audio::-webkit-media-controls-enclosure {
         height: 148.6px;
         width: 380.2px;
     }
-
     #playlists p {
         margin-bottom: 39px;
         margin-right: 4px;
@@ -586,7 +558,6 @@ audio::-webkit-media-controls-enclosure {
     #playlists section:nth-child(2) p {
         margin-left: 5px;
     }
-
     #playlists .more {
         align-self: flex-end;
         margin-right: 10px;
@@ -603,13 +574,11 @@ audio::-webkit-media-controls-enclosure {
     #curated div {
         width: 417px;
     }
-
     /*sizing of hover tailored to Chrome's section computation, not Firefox's*/
     #curated div a:hover {
         height: 127px;
         width: 380.2px;
     }
-  
     #curated img {
         margin-top: 0;
         margin-left: 10px;
@@ -630,7 +599,6 @@ audio::-webkit-media-controls-enclosure {
     #curated section:nth-child(5) img {
         width: 107%;
     }
-
     #curated p {
         margin-bottom: 39px;
         margin-right: 10px;
