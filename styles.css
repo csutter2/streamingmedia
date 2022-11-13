@@ -298,9 +298,6 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 5px;
     box-shadow: inset .1em .1em 1em #590242;
 }
-#trending ::-webkit-scrollbar-track {
-    
-}
 #trending ::-webkit-scrollbar-thumb {
     background-color:#590242;
     border-radius: 5px;
