@@ -514,8 +514,7 @@ audio::-webkit-media-controls-enclosure {
         display: flex;
     }
     a.menu_links {
-        /* width: 113.6px; */
-        width: 129px;
+        width: 135px;/*this width for hover in Chrome, not for Firefox*/
         height: 85px;
         text-align: center;
     }
@@ -547,9 +546,20 @@ audio::-webkit-media-controls-enclosure {
     #playlists img {
         margin-top: 0;
         margin-left: 10px;
-        width: 70%;
+        width: 88%;
         height: auto;
     }
+
+    #playlists section:nth-child(2) img {
+        width: 95%;
+    }
+    #playlists section:nth-child(4) img {
+        width: 91%;
+    }
+    #playlists section:nth-child(5) img {
+        width: 92%;
+    }
+
     #playlists ::-webkit-scrollbar:horizontal,  #curated ::-webkit-scrollbar:horizontal {
         display: none;
     }
@@ -559,10 +569,24 @@ audio::-webkit-media-controls-enclosure {
     #playlists div {
         width: 417px;
     }
+    /*sizing of hover tailored to Chrome's section computation, not Firefox's*/
     #playlists div a:hover {
-        height: 98px;
-        width: 397px;
+        height: 127px; 
+        width: 380.2px;
     }
+    #playlists section:nth-child(2) a:hover {
+        height: 148.6px;
+        width: 380.2px;
+    }
+
+    #playlists p {
+        margin-bottom: 39px;
+        margin-right: 4px;
+    }
+    #playlists section:nth-child(2) p {
+        margin-left: 5px;
+    }
+
     #playlists .more {
         align-self: flex-end;
         margin-right: 10px;
@@ -575,34 +599,48 @@ audio::-webkit-media-controls-enclosure {
         grid-area: curated;
         display: flex;
         flex-direction: column;
-        /* width: 400px; */
     }
     #curated div {
         width: 417px;
     }
+
+    /*sizing of hover tailored to Chrome's section computation, not Firefox's*/
     #curated div a:hover {
-        height: 103px;
-        width: 397px;
+        height: 127px;
+        width: 380.2px;
     }
-    #curated div section:nth-child(3) a {
-        height: 124.6px;
-        width: 397px;
-    }
+  
     #curated img {
         margin-top: 0;
         margin-left: 10px;
-        width: 80%;
+        width: 90%;
         height: auto;
     }
     /*individual image size adjustments: Mellow, Jazz & Chill, Jazz Saxophone respectively*/
     #curated section:nth-child(3) img {
-        width: 89%;
+        width: 93%;
+        margin-bottom: 3px;
+        margin-left: 11px;
+        padding-right: 2px;
     }
     #curated section:nth-child(4) img {
-        width: 70%;
+        width: 84%;
+        margin-top: 2px;
     }
     #curated section:nth-child(5) img {
-        width: 89%;
+        width: 107%;
+    }
+
+    #curated p {
+        margin-bottom: 39px;
+        margin-right: 10px;
+        margin-left: -2px;
+    }
+    #curated section:nth-child(3) p {
+        margin-left: 3px;
+    }
+    #curated section:nth-child(5) p {
+        margin-left: 20px;
     }
     #curated .more {
         align-self: flex-end;
@@ -621,7 +659,7 @@ audio::-webkit-media-controls-enclosure {
         display: grid;
         grid-template-areas: 
         "img h3"
-        "img p";
+        "img p"
     }
     #playlists img, #curated img {
         grid-area: img;
@@ -647,4 +685,3 @@ audio::-webkit-media-controls-enclosure {
     /*ENDS Hamburger menu coding from CC*/
     
 }
-
